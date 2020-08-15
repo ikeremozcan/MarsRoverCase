@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace Case
 {
@@ -30,21 +29,7 @@ namespace Case
                     Rover rover = new Rover(Convert.ToInt32(placementData[0]), Convert.ToInt32(placementData[1]), placementData[2]);
                     rover.HandleMovement(plateauCoordinates[0], plateauCoordinates[1], movementData);
                     rover.InformStatus();
-                    //Task.Run(()=>
-                    //{
-                    //    Rover rover = new Rover(Convert.ToInt32(placementData[0]), Convert.ToInt32(placementData[1]), placementData[2]);
-                    //    rover.HandleMovement(plateauCoordinates[0], plateauCoordinates[1], movementData);
-                    //    rover.InformStatus();
-                    //});
                 }
-
-                //Rover rover = new Rover("N", 1, 2);
-                //rover.HandleMovement(plateauCoordinates[1], "LMLMLMLMM", plateauCoordinates[0]);
-                //rover.InformStatus();
-
-                //Rover rover2 = new Rover("E", 3, 3);
-                //rover2.HandleMovement(plateauCoordinates[1], "MMRMMRMRRM", plateauCoordinates[0]);
-                //rover2.InformStatus();
             }
             catch (Exception ex)
             {
